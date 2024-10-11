@@ -1,0 +1,43 @@
+<%- include('partials/header') %> <%- include('partials/navbar') %>
+<body>
+  <!-- Main -->
+  <div class="container">
+    <h1>Sign Up</h1>
+    <form action="/users/signUp" method="POST" enctype="application/json">
+      <div clss="control-group">
+        <div class="form-group floating-label-form-group controls">
+         <label for="username">Username</label>
+         <input
+          type="text"
+          class="form-control"
+          id="username"
+          name="username"
+          required
+        />
+      </div>
+      <br />
+      <div class="form-group floating-label-form-group controls">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          required
+        />
+      </div>
+      <br />
+      <div class="form-group floating-label-form-group controls">
+        <label for="passwrod">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          name="password"
+          required
+        />
+      </div>
+    </form>
+  </div>
+</body>
+<%- include('partials/footer') %>
